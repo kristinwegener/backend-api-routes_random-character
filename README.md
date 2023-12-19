@@ -13,16 +13,17 @@ Create an api route which returns a character object with random values using `c
 
 You can use the following hints as guideline:
 
-- Create the file structure `pages/api/random-character.js`.
-- Switch to `pages/api/random-character.js`; write a handler function which
-  - responds with a `200` status code and
-  - with a character object containing random information (see example below);
-  - parses the character object with the .json() method.
+[x] Create the file structure `pages/api/random-character.js`.
+[x] Switch to `pages/api/random-character.js`; write a handler function which
+[x] responds with a `200` status code and
+[x] with a character object containing random information (see example below);
+[x] parses the character object with the .json() method.
+
 - To create random values, use `chance`:
-  - import via `import Chance from "chance";`
-  - create a new instance with `const chance = new Chance();`
-  - create a `character` object and use the methods of `chance` like in the example below;
-  - feel free to add keys as you wish: every character should have a [twitter name](https://chancejs.com/web/twitter.html) and a [geohash](https://chancejs.com/location/geohash.html), right?
+  [x] import via `import Chance from "chance";`
+  [x] create a new instance with `const chance = new Chance();`
+  [x] create a `character` object and use the methods of `chance` like in the example below;
+  [x] feel free to add keys as you wish: every character should have a [twitter name](https://chancejs.com/web/twitter.html) and a [geohash](https://chancejs.com/location/geohash.html), right?
 
 ```js
 // example character object with random values
@@ -35,17 +36,18 @@ const character = {
 
 Check your api route:
 
-- run `npm run dev` and
-- switch to the browser and open `/api/random-character`: you should now see the keys of the character object with random values.
+[x] run `npm run dev` and
+[x] switch to the browser and open `/api/random-character`: you should now see the keys of the character object with random values.
 
 ### Create the Frontend
 
 You have now prepared an api route responding with a random character – let's use it to display the data for the user!
 
-- Switch to `pages/index.js`;
-- Import the `useSWR` hook, write a fetcher for it and fetch the route `/api/random-character`.
-- Adapt the return statement to display the `data` on screen.
-- Open the browser: the home page under `/` should now show your fetched data!
+[x] Switch to `pages/index.js`;
+[x] Import the `useSWR` hook, write a fetcher for it and fetch the route `/api/random-character`.
+
+[x] Adapt the return statement to display the `data` on screen.
+[x] Open the browser: the home page under `/` should now show your fetched data!
 
 ## Notes
 
